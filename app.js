@@ -15,7 +15,7 @@ const usersRouter = require("./routes/User");
 const app = express();
 
 // stops cors error from frontend api calls
-app.use(cors({origin: process.env.CORS_ORIGIN})
+app.use(cors({origin: process.env.CORS_ORIGIN}))
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
