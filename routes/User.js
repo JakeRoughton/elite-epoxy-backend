@@ -7,11 +7,11 @@ const {
 } = require("../Controllers/usersController");
 
 /* GET users listing. */
-router.get("/", function (req, res, next) {
+router.get("/api/", function (req, res, next) {
 	res.send("respond with a resource");
 });
-router.post("/register", createUser);
-router.post("/login", loginUser);
-router.get("/verify-user", verifyUser);
+router.post("/api/register", createUser);
+router.post("/api/login", loginUser);
+router.get("/api/verify-user", verifyUser);
 
 module.exports = router;
